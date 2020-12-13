@@ -1,7 +1,7 @@
 export const teamOne = [
   {
-    key: "1",
-    name: "Nic Fan",
+    key: '1',
+    name: 'Nic Fan',
     games: 12,
     goals: 10,
     assists: 4,
@@ -9,8 +9,8 @@ export const teamOne = [
     reds: 0,
   },
   {
-    key: "2",
-    name: "Sam Spilman",
+    key: '2',
+    name: 'Sam Spilman',
     games: 10,
     goals: 5,
     assists: 8,
@@ -18,8 +18,8 @@ export const teamOne = [
     reds: 0,
   },
   {
-    key: "3",
-    name: "Joe Minto",
+    key: '3',
+    name: 'Joe Minto',
     games: 11,
     goals: 7,
     assists: 3,
@@ -27,8 +27,8 @@ export const teamOne = [
     reds: 0,
   },
   {
-    key: "4",
-    name: "Basil Doane",
+    key: '4',
+    name: 'Basil Doane',
     games: 12,
     goals: 4,
     assists: 6,
@@ -36,8 +36,8 @@ export const teamOne = [
     reds: 0,
   },
   {
-    key: "5",
-    name: "Rogelio Alberts",
+    key: '5',
+    name: 'Rogelio Alberts',
     games: 12,
     goals: 4,
     assists: 6,
@@ -45,8 +45,8 @@ export const teamOne = [
     reds: 0,
   },
   {
-    key: "6",
-    name: "Willis Theobald",
+    key: '6',
+    name: 'Willis Theobald',
     games: 12,
     goals: 4,
     assists: 6,
@@ -54,8 +54,8 @@ export const teamOne = [
     reds: 0,
   },
   {
-    key: "7",
-    name: "Ervin Barto",
+    key: '7',
+    name: 'Ervin Barto',
     games: 9,
     goals: 1,
     assists: 2,

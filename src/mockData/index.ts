@@ -1,2 +1,2 @@
-export * from "./actions";
-export * from "./teams";
+export * from './actions';
+export * from './teams';

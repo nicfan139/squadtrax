@@ -1,6 +1,6 @@
-import React, { FC } from "react";
-import Head from "next/head";
-import { Row, Col } from "antd";
+import React, { FC } from 'react';
+import Head from 'next/head';
+import { Row, Col } from 'antd';
 import {
   faStepBackward,
   faStepForward,
@@ -8,9 +8,9 @@ import {
   faFutbol,
   faHandsHelping,
   faHandPaper,
-} from "@fortawesome/free-solid-svg-icons";
-import Ticker from "react-ticker";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+} from '@fortawesome/free-solid-svg-icons';
+import Ticker from 'react-ticker';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   PageTitle,
   SectionTitle,
@@ -18,8 +18,8 @@ import {
   SectionCard,
   LeagueTable,
   StatCard,
-} from "components";
-import { GameCard, AnnouncementsBox } from "pages-styles";
+} from 'components';
+import { GameCard, AnnouncementsBox } from 'pages-styles';
 
 const Home: FC = () => {
   return (

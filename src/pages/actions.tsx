@@ -1,8 +1,8 @@
-import React, { FC, useState } from "react";
-import Head from "next/head";
-import { Row, Col } from "antd";
-import { PageTitle, SidePanel } from "components";
-import { actionsList, IActionDTO } from "mock-data";
+import React, { FC, useState } from 'react';
+import Head from 'next/head';
+import { Row, Col } from 'antd';
+import { PageTitle, SidePanel } from 'components';
+import { actionsList, IActionDTO } from 'mock-data';
 import { StyledActionCard, StyledActionIcon } from 'pages-styles';
 
 const Actions: FC = () => {

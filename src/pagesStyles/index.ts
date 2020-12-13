@@ -1,3 +1,3 @@
 export * from './actions';
-export * from "./home";
-export * from "./teams";
+export * from './home';
+export * from './teams';

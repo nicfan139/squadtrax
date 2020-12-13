@@ -1,9 +1,9 @@
-import React, { FC, useState } from "react";
-import Head from "next/head";
-import { Table } from "antd";
-import { PageTitle, SectionCard, Text, Button, SidePanel } from "components";
-import { teamOne } from "mock-data";
-import { StyledSectionRow } from "pages-styles";
+import React, { FC, useState } from 'react';
+import Head from 'next/head';
+import { Table } from 'antd';
+import { PageTitle, SectionCard, Text, Button, SidePanel } from 'components';
+import { teamOne } from 'mock-data';
+import { StyledSectionRow } from 'pages-styles';
 
 interface TeamTableColumnDTO {
   name: string;
@@ -16,36 +16,36 @@ interface TeamTableColumnDTO {
 
 const columns = [
   {
-    title: "Name",
-    dataIndex: "name",
+    title: 'Name',
+    dataIndex: 'name',
     sorter: (a: TeamTableColumnDTO, b: TeamTableColumnDTO) =>
       a.name.length - b.name.length,
   },
   {
-    title: "Games played",
-    dataIndex: "games",
+    title: 'Games played',
+    dataIndex: 'games',
     sorter: (a: TeamTableColumnDTO, b: TeamTableColumnDTO) => a.games - b.games,
   },
   {
-    title: "Goals",
-    dataIndex: "goals",
+    title: 'Goals',
+    dataIndex: 'goals',
     sorter: (a: TeamTableColumnDTO, b: TeamTableColumnDTO) => a.goals - b.goals,
   },
   {
-    title: "Assists",
-    dataIndex: "assists",
+    title: 'Assists',
+    dataIndex: 'assists',
     sorter: (a: TeamTableColumnDTO, b: TeamTableColumnDTO) =>
       a.assists - b.assists,
   },
   {
-    title: "Yellows",
-    dataIndex: "yellows",
+    title: 'Yellows',
+    dataIndex: 'yellows',
     sorter: (a: TeamTableColumnDTO, b: TeamTableColumnDTO) =>
       a.yellows - b.yellows,
   },
   {
-    title: "Reds",
-    dataIndex: "reds",
+    title: 'Reds',
+    dataIndex: 'reds',
     sorter: (a: TeamTableColumnDTO, b: TeamTableColumnDTO) => a.reds - b.reds,
   },
 ];
@@ -61,11 +61,11 @@ const Teams: FC = () => {
         <PageTitle>My teams</PageTitle>
         <Button onClick={() => toggleNewTeamForm(true)}>Add new team</Button>
         <StyledSectionRow>
-          <SectionCard title="7up (Fall 7v7)">
+          <SectionCard title='7up (Fall 7v7)'>
             <Table columns={columns} dataSource={teamOne} pagination={false} />
           </SectionCard>
 
-          <SectionCard title="Form">
+          <SectionCard title='Form'>
             <Text>Last 5 games: WWDLW</Text>
             <Text>Upcoming fixtures</Text>
             <ul>
@@ -78,13 +78,13 @@ const Teams: FC = () => {
           </SectionCard>
         </StyledSectionRow>
         <StyledSectionRow>
-          <SectionCard title="League Table (Fall 7v7)">
+          <SectionCard title='League Table (Fall 7v7)'>
             <Table />
           </SectionCard>
         </StyledSectionRow>
       </div>
       <SidePanel
-        title={"Register for new team"}
+        title={'Register for new team'}
         onClose={() => toggleNewTeamForm(false)}
         visible={newTeamForm}
         width={600}

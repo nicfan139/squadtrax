@@ -1,7 +1,7 @@
-import React, { FC } from "react";
-import Head from "next/head";
-import { Calendar } from "antd";
-import { PageTitle } from "components";
+import React, { FC } from 'react';
+import Head from 'next/head';
+import { Calendar } from 'antd';
+import { PageTitle } from 'components';
 
 const Fixtures: FC = () => {
   return (
