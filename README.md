@@ -1,30 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Squadtrax
 
-## Getting Started
+Designed for individuals participating in a university/local league to keep track of their teams, games and more...
 
-First, run the development server:
+Basically I built this because I think IMLeagues is terrible, and wanted to see if I could build something similar from scratch with a more intuitive UI/UX layout.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+This is just a concept dashboard UI built with [Next.js](https://nextjs.org/).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. Clone the repo
 
-## Learn More
+2. Install dependencies:
+    `$ yarn install`
 
-To learn more about Next.js, take a look at the following resources:
+3. Run the development server:
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Run [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Authors
 
-## Deploy on Vercel
+- **Nicolas Fan** - [nicfan139](https://github.com/nicfan139)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed and copyrighted - see the [LICENSE.md](LICENSE.md) file for details
