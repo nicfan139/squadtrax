@@ -1,0 +1,17 @@
+{
+  "rules": {
+    "no-console": "error",
+    "no-debugger": "error",
+    "no-var": "error",
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreRegExpLiterals": true,
+        "ignoreTemplateLiterals": true
+      }
+    ]
+  }
+}
