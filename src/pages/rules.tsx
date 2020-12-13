@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import Head from 'next/head';
-import { PageTitle } from 'components';
 import { Collapse } from 'antd';
+import { PageTitle } from 'components';
 
 const { Panel } = Collapse;
 

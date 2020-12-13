@@ -26,6 +26,8 @@
     "paths": {
       "assets": ["assets"],
       "components": ["components"],
+      "mock-data": ["mockData"],
+      "pages-styles": ["pagesStyles"],
       "utils": ["utils"],
     },
   },
