@@ -68,7 +68,7 @@ const data = [
   {
     key: 1,
     position: 1,
-    team: '7up',
+    team: 'My Team',
     gamesPlayed: 6,
     wins: 5,
     draws: 0,

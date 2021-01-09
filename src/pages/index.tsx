@@ -40,7 +40,7 @@ const Home: FC = () => {
                 Last game <FontAwesomeIcon icon={faStepBackward} />
               </>
             }
-            matchup="7up vs The Lost and Damned (A)"
+            matchup="My Team vs Team 1 (A)"
             score="WIN 2 - 0"
             location="Rutherford Field B"
             date="10/15/2020"
@@ -54,7 +54,7 @@ const Home: FC = () => {
                 Next game <FontAwesomeIcon icon={faStepForward} />
               </>
             }
-            matchup="7up vs McGill's finest (H)"
+            matchup="My Team vs Team 2 (H)"
             location="Rutherford Field A"
             date="10/22/2020"
             time="8:00pm"

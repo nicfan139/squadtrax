@@ -18,7 +18,7 @@ export const actionsList: IActionDTO[] = [
     title: 'Request match reschedule',
     action: actionTypes.REQUEST_GAME_RESCHEDULE,
     icon: faCalendarDay,
-    description: 'Velit do elit occaecat aliquip do nostrud officia ullamco quis sit pariatur ea cupidatat. Sint commodo aliquip dolore cillum aute. Labore eu anim proident excepteur tempor cillum et qui adipisicing proident. Ex excepteur nulla eu velit Lorem adipisicing consectetur quis dolore voluptate est veniam aute. Veniam excepteur do exercitation nostrud cillum laboris nisi magna est ullamco elit. Consectetur id enim elit sint eiusmod sunt id ea ut fugiat ipsum proident deserunt. Anim deserunt tempor proident elit dolore et cillum non ea qui ut aliquip cillum.'
+    description: 'Velit do elit occaecat aliquip do nostrud officia ullamco quis sit pariatur ea cupidatat. Sint commodo aliquip dolore cillum aute. Labore eu anim proident excepteur tempor cillum et qui adipisicing proident. Ex excepteur nulla eu velit Lorem adipisicing consectetur quis dolore voluptate est veniam aute. Veniam excepteur do exercitation nostrud cillum laboris nisi magna est ullamco elit.'
   },
   {
     title: 'Request game swap',

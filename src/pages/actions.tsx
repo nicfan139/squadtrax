@@ -1,22 +1,46 @@
 import React, { FC, useState } from 'react';
 import Head from 'next/head';
 import { Row, Col } from 'antd';
-import { PageTitle, SidePanel } from 'components';
-import { actionsList, IActionDTO } from 'mock-data';
+import { PageTitle, GameRescheduleForm, GameSwapForm, MessageCoordinatorForm } from 'components';
+import { actionsList, IActionDTO, actionTypes } from 'mock-data';
 import { StyledActionCard, StyledActionIcon } from 'pages-styles';
 
 const Actions: FC = () => {
-  const [slider, toggleSlider] = useState<boolean>(false);
   const [currentAction, setCurrentAction] = useState<IActionDTO>();
 
   const openSlider = (action: IActionDTO) => {
     setCurrentAction(action);
-    toggleSlider(true);
   };
 
   const closeSlider = () => {
-    toggleSlider(false);
     setCurrentAction(null);
+  };
+
+  const renderForm = (actionObj: IActionDTO) => {
+    const {
+      title,
+      description,
+      action,
+    } = actionObj;
+    const formProps = {
+      title,
+      description,
+      onClose: closeSlider,
+    };
+    switch(action) {
+      case actionTypes.REQUEST_GAME_RESCHEDULE:
+        return (
+          <GameRescheduleForm {...formProps} />
+        );
+      case actionTypes.REQUEST_GAME_SWAP:
+        return (
+          <GameSwapForm {...formProps} />
+        );
+      case actionTypes.MESSAGE_COORDINATOR:
+        return (
+          <MessageCoordinatorForm {...formProps} />
+        );
+    }
   };
 
   return (
@@ -41,14 +65,7 @@ const Actions: FC = () => {
           })}
         </Row>
 
-        <SidePanel
-          title={currentAction?.title}
-          onClose={closeSlider}
-          visible={slider}
-          width={600}
-        >
-          <p>{currentAction?.description}</p>
-        </SidePanel>
+        {currentAction && renderForm(currentAction)}
       </div>
     </>
   );

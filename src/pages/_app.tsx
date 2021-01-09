@@ -10,8 +10,9 @@ interface IAppProps {
 
 const App:FC<IAppProps> = ({ Component, pageProps }) => {
   const route = useRouter();
-  console.log('Current route:', route);
-  console.log('.env variables:', process.env);
+  if (process.env.NODE_ENV === 'development') {
+    console.log('Current route:', route);
+  };
   return (
     <Layout>
       <Sidebar />

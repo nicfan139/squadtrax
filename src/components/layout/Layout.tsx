@@ -22,23 +22,21 @@ const StyledLayout = styled.div`
 `;
 
 const ScrollBar = createGlobalStyle`
-  body {
-    ::-webkit-scrollbar {
-      width: 13px;
-      height: 13px;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #181f48;
-      border-radius: 10px;
-    }
-    ::-webkit-scrollbar-thumb:hover{
-      background: #000000;
-    }
-    ::-webkit-scrollbar-track{
-      background: #ffffff;
-      border-radius: 10px;
-      box-shadow: inset 7px 10px 12px #ffffff;
-    }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #181f48;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background: #000000;
+  }
+  ::-webkit-scrollbar-track{
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: inset 7px 10px 12px #ffffff;
   }
 `;
 

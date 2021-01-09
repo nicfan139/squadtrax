@@ -61,7 +61,7 @@ const Teams: FC = () => {
         <PageTitle>My teams</PageTitle>
         <Button onClick={() => toggleNewTeamForm(true)}>Add new team</Button>
         <StyledSectionRow>
-          <SectionCard title='7up (Fall 7v7)'>
+          <SectionCard title='My Team (Fall 7v7)'>
             <Table columns={columns} dataSource={teamOne} pagination={false} />
           </SectionCard>
 
