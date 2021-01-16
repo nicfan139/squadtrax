@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react';
 import Head from 'next/head';
 import { Table } from 'antd';
-import { PageTitle, SectionCard, Text, Button, SidePanel } from 'components';
+import { PageTitle, SectionCard, Text, Button, AddTeamForm } from 'components';
 import { teamOne } from 'mock-data';
 import { StyledSectionRow } from 'pages-styles';
 
@@ -77,27 +77,11 @@ const Teams: FC = () => {
             </ul>
           </SectionCard>
         </StyledSectionRow>
-        <StyledSectionRow>
-          <SectionCard title='League Table (Fall 7v7)'>
-            <Table />
-          </SectionCard>
-        </StyledSectionRow>
       </div>
-      <SidePanel
-        title={'Register for new team'}
-        onClose={() => toggleNewTeamForm(false)}
-        visible={newTeamForm}
-        width={600}
-      >
-        <p>
-          Quis dolore officia ullamco nulla elit aliquip laborum dolor.
-          Incididunt est nostrud quis fugiat deserunt do esse incididunt irure
-          esse adipisicing consectetur occaecat. Qui ut consectetur excepteur do
-          sint mollit occaecat qui excepteur. Officia ut cupidatat eiusmod
-          pariatur. Lorem qui in pariatur dolore fugiat occaecat nisi proident
-          duis ad aute.
-        </p>
-      </SidePanel>
+      
+      {newTeamForm && (
+        <AddTeamForm onClose={() => toggleNewTeamForm(false)} />
+      )}
     </>
   );
 };

@@ -35,7 +35,11 @@ const GameSwapForm: FC<IFormProps> = ({
       visible
       width={600}
       footerButtons={(
-        <Button type="primary" onClick={() => toggleConfirmation(true)}>
+        <Button
+          type="primary"
+          onClick={() => toggleConfirmation(true)}
+          disabled={!selectedMatch}
+        >
           Send request
         </Button>
       )}

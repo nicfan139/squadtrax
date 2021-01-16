@@ -30,7 +30,7 @@ const Home: FC = () => {
 
       <PageTitle>Welcome to the Squadtrax dashboard!</PageTitle>
 
-      <Ticker>{() => <Text>| Team A (2) - (0) Team B |</Text>}</Ticker>
+      <Ticker>{() => <Text>| IMPORTANT ANNOUNCEMENT: All leagues have been suspended due to the COVID-19 pandemic. |</Text>}</Ticker>
 
       <Row>
         <Col xs={12} md={6}>
@@ -76,13 +76,13 @@ const Home: FC = () => {
           <SectionTitle>My stats</SectionTitle>
           <Row>
             <Col md={8}>
-              <StatCard title="Matches" value={12} icon={faRunning} />
+              <StatCard title="Matches" value={3} icon={faRunning} />
             </Col>
             <Col md={8}>
-              <StatCard title="Goals" value={10} icon={faFutbol} />
+              <StatCard title="Goals" value={7} icon={faFutbol} />
             </Col>
             <Col md={8}>
-              <StatCard title="Assists" value={4} icon={faHandsHelping} />
+              <StatCard title="Assists" value={3} icon={faHandsHelping} />
             </Col>
             <Col md={8}>
               <StatCard
