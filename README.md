@@ -2,9 +2,7 @@
 
 Designed for individuals participating in a university/local league to keep track of their teams, games and more...
 
-Basically I built this because I think IMLeagues is terrible, and wanted to see if I could build something similar from scratch with a more intuitive UI/UX layout.
-
-This is just a concept dashboard UI built with [Next.js](https://nextjs.org/).
+This is just a dashboard UI concept with static data, built with [Next.js](https://nextjs.org/).
 
 ## Installation
 
